@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Sample single page site for vodlo</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="keywords"  content="fullpage" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/mixfruits.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+				'css3': true,
+				'sectionsColor': ['#fff', '#fff', '#fff', '#fff'],
+
+/**				'afterLoad': function(anchorLink, index){
+					if(index == 2){
+						$('#links*').addClass('active');
+					}
+				}, 
+*/
+
+				'onLeave': function(index, nextIndex, direction){
+
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+<div id="fullpage">
+	<div class="section home" id="section0">
+		<img src="./images/logo.svg" id="logo" height= "8%"/>
+		<img src="./images/notebook.png" id="notebook" height= "50%"/>
+		<img src="./images/pencil.png" id="pencil" height= "15%"/>
+		<img src="./images/highlighter.png" id="highlighter" height= "11%"/>
+		<img src="./images/glasses.png" id="glasses" height= "25%"/>
+		<div class="home-content">
+			<div class="home-text">
+				<p>“We Build  Compelling  Applications.” </p>
+			</div>
+			<img src="./images/iphone.png" id="iphone" height= "30%" />
+			<img src="./images/ipad.png" id="ipad" height= "50%" />
+		</div>
+		<img src="./images/earbuds.png" id="earbuds" height= "50%"/>
+		<img src="./images/nikon.png" id="nikon" height= "20%"/>
+	</div>
+	<div class="section about" id="section1">
+		<div class="home-text">
+			<p>“We Build  Compelling  Applications.” </p>
+		</div>
+	</div>
+	<div class="section moveDown" id="section2">
+		<div class="home-text">
+			<p>“We Build  Compelling  Applications.” </p>
+		</div>
+	</div>
+	<div class="section moveDown" id="section3">
+		<div class="home-text">
+			<p>“We Build  Compelling  Applications.” </p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

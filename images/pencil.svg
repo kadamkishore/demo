@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="345.375" height="281.781" viewBox="0 0 345.375 281.781">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.8;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #c4ae91;
+      }
+
+      .cls-2 {
+        filter: url(#filter-chain-1);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #252525;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2.736" dy="7.518" in="SourceAlpha"/>
+      <feGaussianBlur result="dropBlur"/>
+      <feFlood flood-opacity="0.05"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+      <feImage x="3.812000000000012" y="0" width="311.5" height="259.78099999999995" preserveAspectRatio="none" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzExLjUiIGhlaWdodD0iMjU5Ljc4MDk5OTk5OTk5OTk1Ij48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB5MT0iMTI5Ljg5IiB4Mj0iMzExLjUiIHkyPSIxMjkuODkiPgogIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwMDAwMSIvPgogIDxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjZmZmIi8+CiAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDAwMDAxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIG9wYWNpdHk9IjAuMSIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg=="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="softLight" in2="shadowed" result="gradientFill"/>
+      <feGaussianBlur stdDeviation="50" in="SourceAlpha" result="innerGlowBlur"/>
+      <feFlood flood-color="#000001" flood-opacity="0.2"/>
+      <feComposite operator="out" in2="innerGlowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="softLight" in2="gradientFill" result="innerGlow"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <path d="M317.219,248.408 L304.561,263.892 L5.709,19.590 L18.367,4.105 L317.219,248.408 Z" class="cls-2"/>
+    <path d="M345.373,281.788 L302.655,259.783 L315.313,244.298 L345.373,281.788 Z" class="cls-3"/>
+    <path d="M336.418,270.620 L345.373,281.788 L332.648,275.233 L336.418,270.620 Z" class="cls-4"/>
+  </g>
+</svg>
